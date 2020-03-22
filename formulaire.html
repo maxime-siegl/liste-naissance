@@ -1,8 +1,103 @@
-<form method="POST" action="traitement.php">
-    <p>
-        <label for="prenom">
-            Votre Prénom/Surnom 
-        </label>
-        <input type="text" name="prenom" id="prenom" placeholder="Ex: Couchinator,..." size="20" maxlength="30"> 
-    </p>
-</form>
+<html>
+    <head>
+        <title>Formulaire d'achat</title>
+        <link rel="stylesheet" href="liste.css">
+    </head>
+    <body>
+        <header>
+            <h1>Parce que c'est nous l'avenir</h1>
+            <p>Et qu'il faut un bon départ dans notre petite existence</p>
+        </header>
+        <hr>
+        <main>
+            <form method="POST" action="liste.html">
+                <p>
+                    <label for="prenom">
+                        Votre Prénom/Surnom 
+                    </label>
+                    <input type="text" name="prenom" id="prenom" placeholder="Ex: Couchinator,..." size="20" maxlength="30" required> 
+                </p>
+                <br>
+                <div id="select">
+                    <p>
+                        <label for="categorie">
+                            Catégorie
+                        </label>
+                        <select name="categorie" id="categorie" required>
+                            <option value="">Choissez une catégorie</option>
+                            <option value="Bedroom">Bedroom</option>
+                            <option value="Bathroom">Bathroom</option>
+                            <option value="Meal Time">Meal Time</option>
+                            <option value="Dodo Time">Dodo Time</option>
+                            <option value="Awakening">Awakening</option>
+                            <option value="Wander, Exit">Wander, Exit</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label for="produits">
+                            Produits
+                        </label>
+                        <select name="produits" id="produits" required>
+                            <option value="">Choisissez un produit</option>
+                            <optgroup label="Bedroom">
+                                <option value="Lit à barreaux">Lit à barreaux</option>
+                                <option value="Matelas">Matelas</option>
+                                <option value="Couverture">Couverture</option>
+                                <option value="Draps">Draps</option>
+                                <option value="Ecoute bébé">Ecouteur bébé</option>
+                            </optgroup>
+                            <optgroup label="Bathroom">
+                                <option value="Table à langer">Table à langer</option>
+                                <option value="Matelas à langer">Matelas à langer</option>
+                                <option value="Baignoire">Baignoire</option>
+                                <option value="Produits Hygiènes">Produits Hygiènes</option>
+                                <option value="Peignoir">Peignoir</option>
+                                <option value="Conton Hydrophile">Conton Hydrophile</option>
+                                <option value="Thermomètre">Thermomètre</option>
+                                <option value="Brosse">Brosse</option>
+                            </optgroup>
+                            <optgroup label="Meal Time">
+                                <option value="Biberons">Biberons</option>
+                                <option value="Tétines">Tétines</option>
+                                <option value="Chauffe Biberon">Chauffe Biberon</option>
+                            </optgroup>
+                            <optgroup label="Dodo Time">
+                                <option value="Bodies">Bodies</option>
+                                <option value="Pyjamas">Pyjamas</option>
+                                <option value="Gigoteuse">Gigoteuse</option>
+                                <option value="Bonnet">Bonnet</option>
+                                <option value="Paires de moufles">Paires de moufles</option>
+                                <option value="Paires de Chaussettes">Paires de Chaussettes</option>
+                            </optgroup>
+                            <optgroup label="Awakening">
+                                <option value="Hochet">Hochet</option>
+                                <option value="Arche d'Eveil">Arche d'Eveil</option>
+                                <option value="Jouet d'éveil">Jouet d'éveil</option>
+                                <option value="Veuilleuse">Veuilleuse</option>
+                            </optgroup>
+                            <optgroup label="Wander, Exit">
+                                <option value="Poussette">Poussette</option>
+                                <option value="Nacelle">Nacelle</option>
+                                <option value="Porte bébé">Porte bébé</option>
+                                <option value="Siège auto">Siège auto</option>
+                            </optgroup>
+                        </select>
+                    </p>
+                </div>
+                <p>
+                    <label for="msg">
+                        Petit Message
+                    </label>
+                    <textarea name="petit message" id="msg" cols="30" rows="10" placeholder="Laissez-nous un petit mot"></textarea>
+                </p>
+                <p>
+                    <input type="submit" value="Envoyer" id="envoyer">
+                </p>
+            </form>
+        </main>
+        <hr>
+        <footer>
+            <h3>Merci Beaucoup !!!</h3>
+        </footer>
+    </body>
+</html>
